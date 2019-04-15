@@ -1,12 +1,3 @@
-/*
- * @(#)PropertiesUtils.java
- *
- * Copyright 2013 Vision, Inc. All rights reserved.
- */
-
-/**
- * 
- */
 package com.shoe.utils;
 
 import java.io.IOException;
@@ -16,8 +7,6 @@ import java.util.Properties;
 
 /**
  * description
- * @author  shiliang
- * @version 1.0,2013-7-1
  */
 
 public class PropertiesUtils {

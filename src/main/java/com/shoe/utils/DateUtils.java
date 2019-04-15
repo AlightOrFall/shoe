@@ -64,7 +64,6 @@ public class DateUtils {
 	/**
 	 * 字符串解析成 java.sql.Date 日期
 	 * 
-	 * @author fengyuan
 	 * @param shortDate
 	 * @param format
 	 * @return
@@ -83,7 +82,6 @@ public class DateUtils {
 	/**
 	 * 字符串解析成日期
 	 * 
-	 * @author fengyuan
 	 * @param dateStr
 	 * @param format
 	 * @return
@@ -118,7 +116,6 @@ public class DateUtils {
 	/**
 	 * 根据TimeUnit增加指定日期的的时间
 	 * 
-	 * @author fengyuan
 	 * @param date
 	 *            要增加的日期
 	 * @param timeUnit
@@ -152,7 +149,6 @@ public class DateUtils {
 	/**
 	 * 根据TimeUnit清除指定的日历字段
 	 * 
-	 * @author fengyuan
 	 * @param date
 	 *            要清除的日期
 	 * @param timeUnit
@@ -241,7 +237,6 @@ public class DateUtils {
 	/**
 	 * 字符串解析成 java.sql.Time 时间
 	 * 
-	 * @author fengyuan
 	 * @param timeStr
 	 * @param timeFormat
 	 * @return
@@ -333,7 +328,6 @@ public class DateUtils {
 	 * 如果距离时间小于1天则返回的时间为小时<br/>
 	 * 其它则去天数
 	 * 
-	 * @author fengyuan
 	 * @param date
 	 * @return
 	 */
@@ -414,7 +408,6 @@ public class DateUtils {
 	/**
 	 * 根据年龄计算出生日
 	 * 
-	 * @author fengyuan
 	 * @param age
 	 * @return
 	 */

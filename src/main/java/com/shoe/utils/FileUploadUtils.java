@@ -253,7 +253,6 @@ public class FileUploadUtils {
 	/**
 	 * 读取图片流，转为BASE64Decoder
 	 */
-	@SuppressWarnings("restriction")
 	private static String getImgToBase64(InputStream in) {
 		byte[] buff = new byte[BYTE_SIZE]; // 每次读的缓存
 		byte[] save = new byte[SAVE_SIZE]; // 保存前缓存
@@ -316,7 +315,6 @@ public class FileUploadUtils {
 	  * @param suffix 图片后缀 可以为jpg、png、gif
 	  * @throws Exception
 	  */
-	 @SuppressWarnings("restriction")
 	public static String savePictoServer(String base64String,String path,String imgName,String suffix)throws Exception{
 		 	BASE64Decoder decoder = new sun.misc.BASE64Decoder(); 
 	        byte[] bytes1 = decoder.decodeBuffer(base64String);                  
