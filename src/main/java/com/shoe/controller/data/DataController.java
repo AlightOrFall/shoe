@@ -159,6 +159,7 @@ public class DataController {
 		if(shoeId == null){
 			throw new RuntimeException("参数异常");
 		}
+		
 		shoeService.delete(shoeId);
 		return new ModelAndView(new InterfaceJsonView());
 	}
