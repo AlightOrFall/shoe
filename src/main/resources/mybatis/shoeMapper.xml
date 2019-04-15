@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.shoe.ShoeDao">
+
+	<resultMap id="map" type="com.shoe.demo.Shoe">
+		<id column="id" property="id" />
+		<result column="commodity_id" property="commodityId" />
+		<result column="color" property="color" />
+		<result column="count" property="count" />
+		<result column="image_path" property="imagePath" />
+		<result column="is_sale" property="isSale" />
+		<result column="sale_count" property="saleCount" />
+	</resultMap>
+	
+	<select id="get" resultMap="map" parameterType="Long">
+		select * from shoe where id = #{id}
+	</select>
+
+	<sql id="cfixed">
+		c.id
+		commodityId,c.count pcount,c.sale_count psaleCount,c.name,DATE_FORMAT(c.create_date,'%Y-%m-%d')
+		createDate,DATE_FORMAT(c.modify_date,'%Y-%m-%d') modifyDate
+	</sql>
+	<sql id="sfixed">
+		s.id,s.color,s.is_sale,s.image_path,s.price,s.size,s.count ccount,s.sale_count csaleCount
+	</sql>
+
+	<select id="findParams" resultType="map" parameterType="java.util.HashMap">
+		select
+		<include refid="sfixed" />,
+		<include refid="cfixed" />
+		from commodity c,shoe s
+		<where>
+			<if test="params.name != null">
+				and c.name like '%${params.name}%'
+			</if>
+			<if test="params.color != null">
+				and s.color like '%${params.color}%'
+			</if>
+			<if test="params.price1 != null and params.price2 == null">
+				and s.price &gt;= #{params.price1}
+			</if>
+			<if test="params.price2 != null and params.price1 == null">
+				and s.price &lt;= #{params.price2}
+			</if>
+			<if test="params.price2 != null and params.price1!= null">
+				and s.price &gt;= #{params.price1} and s.price &lt;= #{params.price2}
+			</if>
+			and s.commodity_id = c.id
+		</where>
+	</select>
+	
+	<select id="findAll" resultType="map">
+		select
+		<include refid="cfixed" />
+		,
+		<include refid="sfixed" />
+		from shoe s,commodity c where s.commodity_id = c.id
+	</select>
+
+	<!-- 添加商品 -->
+	<insert id="create" parameterType="com.shoe.demo.Shoe">
+		insert into
+		shoe(commodity_id,color,is_sale,image_path,price,count,sale_count)
+		values
+		(#{commodityId},#{color},#{isSale},#{imagePath},#{price},#{count},#{saleCount})
+	</insert>
+	
+	<!-- 修改 -->
+    <update id="update" parameterType="com.shoe.demo.Shoe">
+        update shoe
+        <set>
+            <if test="color != null">
+                 color=#{color},
+            </if>
+            <if test="isSale != null">
+                is_sale=#{isSale},
+            </if>
+            <if test="count != null">
+                count=#{count},
+            </if>
+			<if test="saleCount != null">
+				sale_count = #{saleCount},
+			</if>            
+			<if test="imagePath != null">
+				image_path = #{imagePath},
+			</if>            
+        </set>
+        where id=#{id}
+    </update>
+	
+	<delete id="delete" parameterType="Long">
+		delete from shoe where id = #{id}
+	</delete>
+</mapper>

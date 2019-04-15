@@ -1,0 +1,1057 @@
+@charset "UTF-8";
+body, html {
+    font: 14px/1.5 "微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif!important;
+    color: #1c1f21;
+    /* "PingFang SC", */
+}
+h3{
+	font-weight:bold!important;
+}
+ul, li {
+	list-style-type: none;
+}
+.M-box3{
+	display:inline-block;
+}
+.M-box3 a,.M-box3 a input{
+	border-radius:8px;
+}
+.M-box3 .active,.M-box3 a:hover{
+	background:#ddf8ff!important;
+	border:1px solid #ddf8ff!important;
+	color: #37C4DB!important;
+	border-radius:8px;
+}
+.btn-primary{
+	background-color: #29D6FF!important;
+    border-color: #29D6FF!important;
+    border-radius:8px!important;
+}
+.btn-normal{
+	border-radius:8px!important;
+}
+a {
+	text-decoration:none!important;
+	out-line: none;
+	color: #333!important;
+	cursor:pointer;
+}
+a:hover, a:visited, a:link, a:active {
+	text-decoration:none;
+}
+a:hover{
+	color: #37C4DB!important;
+}
+.colorred{
+	color:#E26146;
+}
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.color37C4DB{
+	color:#37C4DB;
+}
+.bgF8F6F9{
+	background-color:#F8F6F9;
+}
+.bgfff{
+	background-color:#fff;
+}
+.container_teaweb{
+	width:1152px;
+	margin:0 auto;
+}
+.cloudshoe_logo{
+	display:inline-block;
+	margin-top: -8px;
+}
+.head_img{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border-radius:200px;
+	margin-right:5px;
+}
+.dropdown-menu.quit_btn{
+	min-width:110px;
+}
+ .tea_nav.nav>li>a{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.navbar-nav.tea_nav li{
+	position: relative;
+	display: block;
+}
+.navbar-nav.tea_nav li:first-child{
+	margin-left:80px;
+}
+.navbar-nav.tea_nav li:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #37C4DB;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.navbar-nav.tea_nav li:hover:after{
+    width: 100%;
+}
+.navbar-nav.tea_nav>li>a{
+	text-decoration: none;
+	height: 100%;
+	display: block;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	color: rgba(255,255,255,0.8)!important;
+	font-size: 16px;
+}
+.container_teaweb .navbar-right .dropdown .dropdown-toggle{
+	color: rgba(255,255,255,0.8)!important;
+	vertical-align:middle;
+}
+.navbar-nav.tea_nav li:hover a{
+	color: #37C4DB!important;
+}
+.classify{
+	width:216px;
+	height:410px;
+	display:inline-block;
+	float:left;
+	-webkit-box-shadow: 0px 14px 30px silver;  
+	-moz-box-shadow: 0px 14px 30px silver;
+	box-shadow:  0px 14px 30px silver;
+	border-collapse:separate !important;
+	background-color: #3F3A37;
+	border-radius:8px 0 0 8px;
+	position:relative;
+}
+.classify .list-group-item{
+    background-color: #222;
+    color:#fff;
+}
+.classify .list-group-item:hover,.classify .list-group-item.active,.classify .list-group-item.active:hover{
+	background-color:#3F3A37;
+	color:#fff;
+}
+/* .classify .list-group-item .list-group-item-heading,.classify .list-group-item.active .list-group-item-text,.classify .list-group-item.active:hover .list-group-item-text{
+	color:#fff!important;
+} */
+.classify .list-group-item{
+	height:205px;
+	width:100%;
+	border:none;
+}
+.classify .list-group-item.active{
+	    border-color: #222;
+	    height:205px;
+	    border:none;
+}
+ .classify .list-group-item {
+ 	display:block;
+	padding-bottom:22px;
+	padding-top:35px;
+} 
+.classify .list-group{
+	margin:0 auto;
+}
+.classify .list-group-item .list-group-item-text{
+	display:inline-block;
+	width:50%;
+	float:left;
+	line-height:42px;
+	text-align:center;
+	color:#fff!important;
+}
+.classify .list-group-item .list-group-item-heading{
+	margin-left:15px;
+	color:#fff!important;
+}
+.classify_details{
+	width:936px;
+	height:410px;
+	position:absolute;
+	background-color:#fff;
+	z-index:2;
+	top:0;
+	left:216px;
+	border-radius:0 8px 8px 0;
+}
+.classify_con_in{
+	padding:0 40px 20px 40px;
+}
+.classify_con_in a,.classify_con_in a:visitead{
+	text-decoration:none;
+	color:#333;
+}
+.classify_con_in a:hover,.classify .list-group-item .list-group-item-text:hover{
+	text-decoration:none;
+	color:#37C4DB!important;
+}
+.subject_title{
+	padding:40px 40px 0 40px;
+}
+.subject_name{
+	display:inline-block;
+	font-size:16px!important;
+	font-weight:bold;
+	    margin-top: 6px;
+}
+.squre_line{
+	display:inline-block;
+	width:3px;
+	height:24px;
+	background-color:#37C4DB;
+	margin-right:8px;
+}
+.classify_con{
+	margin-top:15px;
+}
+.classify_con_in .classify_one{
+	display:inline-block;
+	margin-right:30px;
+	line-height:45px;
+	color:#333;
+}
+.classify_con_in .classify_one:hover{
+	color:#37C4DB!important;
+}
+.shoe_recomm_cover{
+	display:inline-block;
+	width:69px;
+	height:39px;
+	margin-right:10px;
+}
+.shoe_one_index{
+	width:280px;
+	float:left;
+	margin-bottom:28px;
+}
+.shoe_recomm{
+	width:100%;
+	padding: 17px 40px 0 40px;
+	height:227px;
+	height: 171px;
+	border-radius:0 0 8px 0;
+}
+.shoe_recomm_right{
+	width:196px;
+	padding-right:15px;
+}
+.shoe_recomm_right .ellipsis{
+	margin-bottom:3px;
+}
+.banner {
+	display:inline-block;
+	width:936px;
+	height:410px;
+	float:left;
+	border-radius:0 8px 8px 0;
+	-webkit-box-shadow: 0px 14px 30px lightgrey;
+	-moz-box-shadow: 0px 14px 30px lightgrey;
+	box-shadow: 0px 14px 30px lightgrey;
+	border-collapse:separate !important;
+	overflow:hidden;
+}
+.banner img{
+	display:block;
+	width:100%;
+	max-height:100%;
+	border-radius:0 8px 8px 0;
+}
+.containor_index{
+	background-color:#fff;
+	margin-top:35px;
+}
+.brief_left,.brief_right{
+	width:50%;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.brief_right{
+	padding-left:50px;
+	padding-right:50px;
+}
+.brief_img{
+	display:block;
+	width:100%;
+	padding-top:15px;
+}
+.brief_right h3,.teaweb_title,.teaweb_title_recommend{
+	font-size:22px;
+	font-weight:bold;
+}
+.brief_right h3 span{
+	display:inline-block;
+	font-size:26px;
+	font-weight:normal;
+	color:#aaa;
+	margin-left:10px;
+}
+.brief_right p{
+	font-size:16px;
+	line-height:30px;
+	text-align:justify;
+	margin-top:15px;
+}
+.brief_right ul{
+	margin-top:25px;
+}
+.brief_right ul li{
+	font-size:18px;
+	font-weight:bold;
+	height:45px;
+}
+.circle_blue{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border:2px solid #2ECCFD;
+	border-radius:200px;
+	margin-right:15px;
+}
+
+.shoe_recommend_bgimg{
+	display:block;
+	margin:0 auto;
+}
+.shoe_recommend_con .carousel-control.left,.shoe_recommend_con .carousel-control.right{
+    background-image: none;
+}
+.shoe_recommend_con .carousel-control{
+	text-shadow:none;
+}
+.glyphicon-chevron-left:before,.glyphicon-chevron-right:before{
+	color:#37C4DB;
+}
+.shoe_recommend_con{
+	position:relative;
+	z-index:1;
+	padding:55px 0;
+}
+.shoe_recommend_con .carousel-indicators li{
+	    border: 1px solid #2ECCFD;
+}
+.shoe_recommend_con .carousel-indicators li.active{
+	    background-color:#2ECCFD;
+}
+.shoe_recommend_con .carousel-indicators{
+	bottom:10px;
+}
+.teaweb_title_recommend{
+	position:absolute;
+	text-align:center;
+	z-index:2;
+	top:110px;
+	left:550px;
+}
+.video_con{
+	position: absolute;
+    top: 182px;
+    left: 373px;
+    width: 474px;
+    height: 225px;
+	background-color:#fff;
+	overflow:hidden;
+}
+.video_con img{
+	display:block;
+	width:100%;
+}
+.play_icon{
+	display:blcok;
+	position:absolute;
+	z-index:3;
+	top: 250px;
+    left: 560px;
+}
+.container_teaweb.shoe{
+	padding:40px 0;
+	min-height: 500px;
+}
+
+.shoe_one{
+	display:inline-block;
+	width:212px;
+	float:left;
+	margin: 0 0 18px 18px;
+    height: 200px;
+}
+
+.shoe_one{
+	display:inline-block;
+	width:212px;
+	float:left;
+	margin: 0 0 18px 18px;
+    height: 256px;
+}
+.shoe_one:hover{
+	text-decoration:none;
+}
+.shoe_cover{
+	display:block;
+	border-radius:4px;
+	width:100%;
+}
+.shoe_title{
+	width:100%;
+	font-size:16px;
+	margin:5px 5px 5px 0px;
+	color:#333;
+}
+.shoe_title:hover{
+	color:#37C4DB!important;
+}
+.shoe_bottom{
+	font-size:12px;
+	color:#aaa;
+	margin: 0 0 1px;
+	
+}
+/* .shoe_bottom span{
+	margin-right:10px;
+} */
+.ny_nowrap {
+  white-space: nowrap; 
+}
+.ellipsis_2{
+	display:block;
+	word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 36px;
+    transition: all .3s;
+}
+
+
+.ellipsis{
+	display: block;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    max-height:21px;/* IE7+ */
+}
+ /*判断浏览器的版本*/
+<!––[if IE]> 
+.ellipsis_2{
+		display:block;
+	}  
+
+<![endif]––>
+
+.cloudshoe_code{
+	display:block;
+	width:76%;
+	padding:40px 0;
+	margin:0 auto;
+	margin-top:35px;
+}
+.teaweb_bottom{
+	text-align:center;
+	background-color:#101010;
+	padding:20px 0;
+}
+.teaweb_bottom img,.teaweb_bottom p{
+	display:inline-block;
+}
+.teaweb_bottom p{
+	line-height:46px;
+	font-size:12px;
+}
+.teaweb_bottom p span{
+	margin-right:44px;
+}
+.shoe_one:last-child{
+	margin-right:0;
+}
+.good_shoe{
+	margin-top:25px;
+}
+.good_shoe .shoe_one{
+	height:315px;
+	min-height:315px;
+}
+.more:hover{
+	color:#37C4DB!important;
+}
+.more{
+	color:#aaa;
+	font-size:12px;
+}
+.classify .list-group-item:first-child{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 8px;
+}
+.classify .list-group-item:last-child{
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 8px;
+}
+.banner .carousel-control.right{
+	border-radius:0 8px 8px 0;
+}
+.arrow_right{
+	font-size:4px;
+	margin-right:10px;
+	color:rgba(255,255,255,0.4);
+}
+.shoe_recomm_bottom span,.shoe_details_middle_left h3 span{
+	display:inline-block;
+	font-size:12px;
+	color:#aaa;
+}
+.shoe_recomm_bottom img,.shoe_details_middle_left h3 img{
+	display:inline-block;
+	height:12px;
+}
+.shoe_sreen{
+	background-color:#fff;
+	-webkit-box-shadow:0px 14px 30px lightgrey; 
+	-moz-box-shadow:0px 14px 30px lightgrey;
+	box-shadow: 0px 14px 30px lightgrey;
+	border-collapse:separate !important;
+	margin-top:-20px;
+	padding-top:0px;
+}
+.shoe_sreen .container_teaweb{
+	padding:0;
+}
+.screen_icon{
+	display:inline-block;
+	width:22px;
+	height:22px;
+	vertical-align:middle;
+	margin-bottom:7px;
+	margin-right:8px;
+}
+.shoe_sreen_top h3{
+	font-size:22px!important;
+	font-weight:bold;
+	display:inline-block;
+}
+.shoe_sreen ul li{
+	position:relative;
+	display:block;
+	overflow: hidden;
+    padding:8px 0;
+}
+.shoe_sreen ul li:after{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #caced0;
+    width:100%;
+}
+.shoe_sreen ul li:last-child:after{
+	background-color:rgba(0,0,0,0);
+}
+.shoe_sreen_middle a:last-child{
+	margin-left:0;
+}
+.shoe_sreen_middle a{
+	display:inline-block;
+	padding:6px 20px;
+	margin:5px 0;
+	color:#333;
+}
+.shoe_sreen_middle a.active{
+	display:inline-block;
+	color:#2ED1FF!important;
+	background-color:rgba(46,209,255,0.16);
+	border-radius:8px;
+}
+.shoe_sreen_middle a:hover{
+	display:inline-block;
+	background-color:rgba(0,0,0,0.05);
+	border-radius:8px;
+	color:#333!important;
+}
+.shoe_sreen_middle a.active:hover{
+	background-color:rgba(46,209,255,0.16);
+}	
+.shoe_sreen_bottom{
+    padding: 9px 0;
+    border-top:1px solid #e5e7e8;
+}
+.shoe_sreen_bottom .dropdown{
+	display:inline-block;
+}
+.shoe_sreen_bottom .dropdown button.active,.shoe_sreen_bottom .dropdown button.active:hover,.shoe_sreen_bottom .dropdown button:hover{
+	display:inline-block;
+	color:#2ED1FF;
+	background-color:rgba(46,209,255,0.16);
+	border-radius:8px;
+	border:none;
+	box-shadow:none;
+}
+.shoe_sreen_bottom .dropdown-menu{
+	padding:0;
+	border:none;
+	background-color:#fff;
+}
+.shoe_sreen_bottom .dropdown-menu li:hover,.shoe_sreen_bottom .dropdown-menu li a:hover{
+	background-color:#ddf8ff;
+	color:#2ED1FF;
+}
+.shoe_sreen_bottom .dropdown button{
+	border:none;
+	box-shadow:none;
+	border-radius:8px;
+	background-color:rgba(0,0,0,0.05);
+	padding:6px 20px;
+	margin-right:5px;
+}
+.container_teaweb .navbar-brand,.container_teaweb .container-fluid{
+	padding-left:0;
+}
+.shoe_list{
+	margin-top:35px;
+	width:1152px;
+	margin:0 auto;
+}
+.shoe_middle_left{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.shoe_middle_left img{
+	display:inline-block;
+	width:14px;
+	height:14px;
+	vertical-align:middle;
+}
+.shoe_middle_left span{
+	vertical-align:middle;
+}
+.shoe_list .shoe_bottom .ellipsis_2{
+	font-size: 12px;
+    margin-bottom: 8px;
+}
+.collect_btn{
+	background-color: rgba(0,0,0,0.05);
+	border:none;
+	border-radius:200px;
+	padding:6px 20px;
+	color:#333;
+}
+.collect_btn.active,.collect_btn:hover,.collect_btn.active:hover{
+	background-color: #29D6FF;
+	color:#fff;
+	border:none;
+}
+
+.shoe_video_con{
+    width:100%;
+}
+.shoe_video_con_left{
+	margin-top:15px;
+	width:800px;
+	height:450px;
+	border-radius:4px;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.shoe_video_con_left img{
+	border-radius:8px;
+	height:100%;
+	width:100%;
+} 
+.shoe_video_con_right{
+    width:352px;
+    height:450px;
+    margin-top:15px;
+    padding:0 25px;
+    overflow:hidden;
+}
+.shoe_video_con_right_con{
+	overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+./*滚动条样式*/
+        .shoe_video_con_right_con::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        .shoe_video_con_right_con::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+        .shoe_video_con_right_con::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 0;
+			background: rgba(0,0,0,0.1);}
+
+.shoe_details_top{
+	background-color:#333!important;
+	margin-top:-20px;
+	padding-top:15px;
+}
+.shoe_details_top{
+	
+	margin-top:-20px;
+	padding:40px 0;
+	-webkit-box-shadow: 0px 14px 30px silver;  
+	-moz-box-shadow: 0px 14px 30px silver;
+	box-shadow:  0px 14px 30px silver;
+	border-collapse:separate !important;
+}
+.shoe_details_top .container_teaweb{
+	position:relative;
+	
+}
+.shoe_tab{
+	position:absolute;
+	right:0;
+	top:-40px;
+	color:#fff;
+	font-weight:bold;
+	width:120px;
+	text-align:center;
+	background:#1FDEEB;
+	-webkit-box-shadow: 2px 1px 7px silver; 
+	-moz-box-shadow: 2px 1px 7px silver;
+	box-shadow: 2px 1px 7px silver;
+	border-collapse:separate !important;
+	border-radius:0 0 10px 10px;
+	height:48px;
+	font-size:18px;
+	line-height:48px;
+}
+.path{
+	color:rgba(255,255,255,0.6);
+}
+.path a{
+	color:#fff!important;
+	padding:0 5px;
+}
+.colorfff{
+	color:#fff!important;
+}
+.path a:hover{
+	color:#37C4DB!important;
+}
+.shoe_video_con_right .shoe_one_index{
+	width:100%;
+	margin-bottom: 34px;
+}
+.shoe_video_con_right .shoe_recomm_cover{
+	width:30%;
+	height:auto;
+	border-radius:4px;
+}
+.shoe_video_con_right .shoe_recomm_right{
+	width:65%;
+}
+.shoe_video_con_right h3,.shoe_details_middle_left h3{
+	margin-top:0;
+}
+.shoe_details_middle{
+	padding-top:30px;
+	padding-bottom:15px;
+	-webkit-box-shadow: 0px 14px 30px silver;  
+	-moz-box-shadow: 0px 14px 30px silver;
+	box-shadow:  0px 14px 30px silver;
+	border-collapse:separate !important;
+}
+.shoe_details_middle_left{
+	width:80%;
+}
+.shoe_details_middle_right{
+	width:20%;
+	vertical-align:middle;
+}
+.shoe_details_middle_right span{
+	display:inline-block;
+	vertical-align:middle;
+}
+.colect_icon,.colect_icon.active{
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background-image:url(/teacher_web3/images/collect.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	vertical-align:middle;
+}
+.colect_icon.active,.shoe_details_middle_right:hover .colect_icon{
+	background-image:url(/teacher_web3/images/collect_active.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+.shoe_details_middle_right span:last-child{
+	margin-top:4px;
+}
+.shoe_details_middle_right span.active,.shoe_details_middle_right:hover span{
+	color:#37C4DB!important;
+}
+.shoe_details_middle_left h3 span{
+	padding:0 15px;
+}
+.shoe_details_middle_left h3{
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.shoe_details_bottom,.shoe_details_bottom{
+	margin:30px auto;
+}
+.shoe_details_bottom_left,.shoe_details_bottom_left{
+	width:72%;
+	border-radius:8px;
+	
+}
+.shoe_details_bottom_right{
+	width:24%;
+}
+.answer{
+	border-radius:8px;
+	background:#DCF7FF;
+	padding:20px 40px 10px;
+	margin-top:20px;
+}
+.exercise_one{
+	padding-bottom:20px;
+}
+.exercise_one:last-child{
+	padding-bottom:40px;
+}
+.exercise_one_in{
+	padding:0 40px;
+}
+.exercise_one_in .num{
+	font-size:16px;
+	font-weight:bold;
+}
+.exercise_one_in .num span{
+	font-size:20px;
+	margin-right:15px;
+}
+.shoe_details_bottom_right img{
+	display:block;
+	width:100%;
+}
+.shoe_details_top .shoe_cover{
+	display:inline-block;
+	width:40%;
+	border-radius:8px;
+}
+.shoe_details_top .shoe_info{
+	width:55%;
+}
+.shoe_info .gc{
+	color:#aaa;
+	font-size:12px;
+}
+.shoe_info .gc span{
+	display:inline-block;
+	padding:0px 10px 10px 0;
+}
+.count{
+	margin:15px 0;
+}
+.count_one{
+	width:150px;
+	float:left;
+	font-size:16px;
+	text-align:center;
+}
+.count_one:first-child{
+	border-right:1px solid #efefef;
+}
+.chapter_one{
+	padding:40px;
+	margin-bottom:25px;
+	border-radius:8px;
+}
+.chapter_one_con h3{
+	margin-top:0;
+	margin-bottom:28px;
+}
+.chapter_one_shoe .clearfix{
+	vertical-align:middle;
+}
+.video_content_icon{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background-image:url(/teacher_web3/images/video_content_icon.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	margin-right:8px;
+	margin-top:12px;
+	margin-bottom:4px;
+}
+
+.chapter_one_con{
+	display:block;
+}
+.chapter_one_shoe .shoe_name{
+	width:76%;
+	font-size:18px;
+	font-weight:bold;
+	vertical-align:middle;
+	margin-top:9px;
+	margin-bottom:4px;
+	}
+	
+.chapter_one_shoe button{
+	display:none; 
+}
+.chapter_one_shoe:hover button{
+	display:block; 
+}
+.chapter_one_shoe .shoe_brief{
+	width:80%;
+	padding-left:26px;
+	color:#aaa;
+	line-height:24px;
+	margin-top:5px;
+}
+.chapter_one_shoe{
+	display:block;
+	border-radius:8px;
+	margin-top:15px;
+	padding: 20px 35px 15px 35px;
+}
+.chapter_one_shoe:hover{
+	background:#ddf8ff;
+}
+.chapter_one:hover .shoe_name,.chapter_one:hover h3{
+	color:#333!important;
+}
+.chapter_one_shoe:hover .video_content_icon{
+	background-image:url(/teacher_web3/images/video_content_icon_active.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	vertical-align:middle;
+}
+
+.web_teacher_search{
+	
+	display:inline-block!important;
+	width:auto;
+	margin-top:10px;
+	border-radius:8px;
+	background:#f3f5f7;
+	border:1px solid #f3f5f7;
+}
+.web_teacher_search .form-control{
+	position:relative;
+	width:230px!important;
+	background:#f3f5f7;
+    border:none;
+    border-radius:8px;
+    color:#333;
+    outline: 0;
+    transition: .3s linear;
+    width: 250px;
+    height: 42px;
+    z-index:1;
+}
+.web_teacher_search .form-control:focus{
+	width:300px!important;
+	z-index:1;
+	border:1px solid #222;
+}
+.web_teacher_search .form-control::-webkit-input-placeholder {
+	color:#333;
+}
+.web_teacher_search .btn{
+	position:absolute;
+	right:0;
+}
+.web_teacher_search .input-group-btn{
+	display:inline-block;
+}
+.web_teacher_search .btn-default{
+    color: #333;
+    background: #f3f5f7;
+    border-radius: 200px;
+    width: 40px;
+    height:40px;
+    background: 0 0;
+    border: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2000;
+   /*  margin: 4px 0; */
+}
+.web_teacher_search .btn-default:hover,.web_teacher_search .btn-default:active,.web_teacher_search .btn-default:focus{
+	 background:rgba(0,0,0,0)!important; 
+	color:#2ED1FF;
+	box-shadow:none!important;
+}
+.default_page{
+	width:240px;
+	height:144px;
+	background-image:url(/teacher_web3/images/null_img.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin:0 auto;
+}
+.default_page p{
+	padding-top:160px;
+	text-align:center;
+}
+.exercise_tab_group button{
+	border:none;
+	border-radius:8px!important;
+	color:#aaa;
+	padding: 6px 20px;
+	background-color:rgba(0,0,0,0)!important;
+	margin-bottom:10px;
+	margin-right:5px;
+}
+.exercise_tab_group button.active,.exercise_tab_group button:hover{
+	background-color:#ddf8ff!important;
+	color:#2ED1FF!important;
+}
+.why_error textarea{
+	width:100%;
+	border-radius:8px;
+	padding:10px;
+}
+.shoe_details_tea .mui-btn-primary{
+	
+}
+.shoe_sreen_bottom .glyphicon-triangle-top:before{
+	width:8px;
+}
+.num{
+	padding-left:55px;
+}
+.num p{
+	margin:40px 0!important;
+}
+.num_one{
+	font-size:18px;
+	background:#f1f1f1;
+	padding:6px 35px;
+	border-radius:200px;
+	margin-left:-55px;
+	
+}
