@@ -1,9 +1,3 @@
-/*
- * @(#)HttpParameterParser.java
- *
- * Copyright 2008 Xinhua Online, Inc. All rights reserved.
- */
-
 package com.util;
 
 import java.io.Serializable;
