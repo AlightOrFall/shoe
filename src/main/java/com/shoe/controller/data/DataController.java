@@ -39,6 +39,7 @@ public class DataController {
 		return new ModelAndView(new InterfaceJsonView(shoes));
 	}
 
+	
 	@RequestMapping("find_params")
 	public ModelAndView findParams(HttpServletRequest request) {
 		String color = HttpParameterParser.getString(request, "color");
