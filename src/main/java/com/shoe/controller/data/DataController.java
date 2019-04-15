@@ -18,7 +18,6 @@ import com.common.domain.Commodity;
 import com.service.commodity.CommodityService;
 import com.service.shoe.ShoeService;
 import com.shoe.demo.Shoe;
-import com.shoe.transferobj.ShoeTo;
 import com.shoe.utils.Constant;
 import com.shoe.utils.FileUploadUtils;
 import com.shoe.view.InterfaceJsonView;
@@ -84,16 +83,6 @@ public class DataController {
 		content.put("shoes", params2);
 		content.put("pagination", pagination);
 		return new ModelAndView(new InterfaceJsonView(content));
-	}
-	@RequestMapping("find2")
-	public ModelAndView find2(HttpServletRequest request) {
-		Long id = HttpParameterParser.getLong(request, "id");
-		String color = HttpParameterParser.getString(request, "color");
-		Shoe shoe = shoeService.get(id);
-		ShoeTo shoeTo = new ShoeTo(shoe);
-		shoeTo.setId(id);
-		List<Shoe> find = shoeService.find(shoeTo);
-		return new ModelAndView(new InterfaceJsonView(find));
 	}
 
 	@RequestMapping("create")
