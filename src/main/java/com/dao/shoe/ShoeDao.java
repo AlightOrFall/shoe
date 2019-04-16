@@ -20,6 +20,11 @@ public interface ShoeDao {
 	 */
 	List<Shoe> find(@Param("params") Map<String, Object> params);
 	
+	/**
+	 * 这条线有误
+	 * @param shoeTo
+	 * @return
+	 */
 	@SelectProvider(type = ShoeSQLProvider.class, method = "get")
 	List<Shoe> find2(ShoeTo shoeTo);
 
